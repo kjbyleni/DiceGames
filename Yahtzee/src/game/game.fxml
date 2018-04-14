@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="600.0" minHeight="-Infinity" minWidth="540.0" prefHeight="400.0" prefWidth="587.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.GameController">
+   <children>
+      <HBox fx:id="diceBox" maxWidth="600.0" minWidth="500.0" prefHeight="100.0" prefWidth="200.0" spacing="10.0" VBox.vgrow="NEVER">
+         <children>
+            <Button fx:id="first" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" />
+            <Button fx:id="second" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" />
+            <Button fx:id="third" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" />
+            <Button fx:id="fourth" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" />
+            <Button fx:id="fifth" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" />
+         </children>
+         <VBox.margin>
+            <Insets left="20.0" top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <Button fx:id="rollDiceBtn" minHeight="50.0" minWidth="200.0" mnemonicParsing="false" style="-fx-border-radius: 10; -fx-background-color: transparent; -fx-border-color: grey; -fx-border-width: 2;" text="Roll Dice!">
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin></Button>
+      <SplitPane blendMode="SRC_ATOP" dividerPositions="0.5" prefHeight="160.0" prefWidth="200.0">
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+         <items>
+            <VBox fx:id="upperVBox" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: transparent;">
+               <children>
+                  <HBox fx:id="acesPnl" alignment="CENTER_LEFT" maxHeight="50.0" maxWidth="250.0" minWidth="50.0" prefHeight="50.0" prefWidth="200.0" style="-fx-border-color: grey; -fx-border-radius: 10; -fx-border-width: 2;">
+                     <children>
+                        <Label maxHeight="20.0" maxWidth="150.0" minWidth="150.0" text="Aces">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Button fx:id="acesScore" alignment="CENTER" mnemonicParsing="false" prefHeight="20.0" prefWidth="50.0" style="-fx-background-color: transparent;" textAlignment="CENTER">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets bottom="3.0" top="3.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox fx:id="twosPnl" alignment="CENTER_LEFT" layoutX="30.0" layoutY="10.0" maxHeight="50.0" maxWidth="250.0" minWidth="50.0" prefHeight="50.0" prefWidth="200.0" style="-fx-border-color: grey; -fx-border-radius: 10; -fx-border-width: 2;">
+                     <children>
+                        <Label maxHeight="20.0" maxWidth="150.0" minWidth="150.0" text="Twos">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Button fx:id="twosScore" alignment="CENTER" mnemonicParsing="false" prefHeight="20.0" prefWidth="50.0" style="-fx-background-color: transparent;" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets bottom="3.0" top="3.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox fx:id="threesPnl" alignment="CENTER_LEFT" layoutX="30.0" layoutY="10.0" maxHeight="50.0" maxWidth="250.0" minWidth="50.0" prefHeight="50.0" prefWidth="200.0" style="-fx-border-color: grey; -fx-border-radius: 10; -fx-border-width: 2;">
+                     <children>
+                        <Label maxHeight="20.0" maxWidth="150.0" minWidth="150.0" text="Threes">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Button fx:id="threesScore" alignment="CENTER" mnemonicParsing="false" prefHeight="20.0" prefWidth="50.0" style="-fx-background-color: transparent;" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets bottom="3.0" top="3.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox fx:id="foursPnl" alignment="CENTER_LEFT" layoutX="30.0" layoutY="10.0" maxHeight="50.0" maxWidth="250.0" minWidth="50.0" prefHeight="50.0" prefWidth="200.0" style="-fx-border-color: grey; -fx-border-radius: 10; -fx-border-width: 2;">
+                     <children>
+                        <Label maxHeight="20.0" maxWidth="150.0" minWidth="150.0" text="Fours">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Button fx:id="foursScore" alignment="CENTER" mnemonicParsing="false" prefHeight="20.0" prefWidth="50.0" style="-fx-background-color: transparent;" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets bottom="3.0" top="3.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox fx:id="fivesPnl" alignment="CENTER_LEFT" layoutX="30.0" layoutY="10.0" maxHeight="50.0" maxWidth="250.0" minWidth="50.0" prefHeight="50.0" prefWidth="200.0" style="-fx-border-color: grey; -fx-border-radius: 10; -fx-border-width: 2;">
+                     <children>
+                        <Label maxHeight="20.0" maxWidth="150.0" minWidth="150.0" text="Fives">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Button fx:id="fivesScore" alignment="CENTER" mnemonicParsing="false" prefHeight="20.0" prefWidth="50.0" style="-fx-background-color: transparent;" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets bottom="3.0" top="3.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox fx:id="sixesPnl" alignment="CENTER_LEFT" layoutX="30.0" layoutY="10.0" maxHeight="50.0" maxWidth="250.0" minWidth="50.0" prefHeight="50.0" prefWidth="200.0" style="-fx-border-color: grey; -fx-border-radius: 10; -fx-border-width: 2;">
+                     <children>
+                        <Label maxHeight="20.0" maxWidth="150.0" minWidth="150.0" text="Sixes">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Button fx:id="sixesScore" alignment="CENTER" mnemonicParsing="false" prefHeight="20.0" prefWidth="50.0" style="-fx-background-color: transparent;" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets bottom="3.0" top="3.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children></VBox>
+            <VBox fx:id="lowerVBox" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="288.0">
+               <children>
+                  <HBox fx:id="threeOfAKindPnl" alignment="CENTER_LEFT" maxHeight="50.0" maxWidth="250.0" minWidth="50.0" prefHeight="50.0" prefWidth="200.0" style="-fx-border-color: grey; -fx-border-radius: 10; -fx-border-width: 2;">
+                     <children>
+                        <Label maxHeight="20.0" maxWidth="150.0" minWidth="150.0" text="3 of a Kind">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Button fx:id="threeOfAKindScore" alignment="CENTER" mnemonicParsing="false" prefHeight="20.0" prefWidth="50.0" style="-fx-background-color: transparent;" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="3.0" top="3.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <HBox fx:id="fourOfAKindPnl" alignment="CENTER_LEFT" layoutX="30.0" layoutY="10.0" maxHeight="50.0" maxWidth="250.0" minWidth="50.0" prefHeight="50.0" prefWidth="200.0" style="-fx-border-color: grey; -fx-border-radius: 10; -fx-border-width: 2;">
+                     <children>
+                        <Label maxHeight="20.0" maxWidth="150.0" minWidth="150.0" text="4 of a Kind">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Button fx:id="fourOfAKindScore" alignment="CENTER" mnemonicParsing="false" prefHeight="20.0" prefWidth="50.0" style="-fx-background-color: transparent;" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="3.0" top="3.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <HBox fx:id="fullHousePnl" alignment="CENTER_LEFT" layoutX="30.0" layoutY="60.0" maxHeight="50.0" maxWidth="250.0" minWidth="50.0" prefHeight="50.0" prefWidth="200.0" style="-fx-border-color: grey; -fx-border-radius: 10; -fx-border-width: 2;">
+                     <children>
+                        <Label maxHeight="20.0" maxWidth="150.0" minWidth="150.0" text="Full House">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Button fx:id="fullHouseScore" alignment="CENTER" mnemonicParsing="false" prefHeight="20.0" prefWidth="50.0" style="-fx-background-color: transparent;" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="3.0" top="3.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <HBox fx:id="smStraightPnl" alignment="CENTER_LEFT" layoutX="30.0" layoutY="60.0" maxHeight="50.0" maxWidth="250.0" minWidth="50.0" prefHeight="50.0" prefWidth="200.0" style="-fx-border-color: grey; -fx-border-radius: 10; -fx-border-width: 2;">
+                     <children>
+                        <Label maxHeight="20.0" maxWidth="150.0" minWidth="150.0" text="Sm. Straight">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Button fx:id="smStraightScore" alignment="CENTER" mnemonicParsing="false" prefHeight="20.0" prefWidth="50.0" style="-fx-background-color: transparent;" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="3.0" top="3.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <HBox fx:id="lgStraightPnl" alignment="CENTER_LEFT" layoutX="30.0" layoutY="110.0" maxHeight="50.0" maxWidth="250.0" minWidth="50.0" prefHeight="50.0" prefWidth="200.0" style="-fx-border-color: grey; -fx-border-radius: 10; -fx-border-width: 2;">
+                     <children>
+                        <Label maxHeight="20.0" maxWidth="150.0" minWidth="150.0" text="Lg. Straight">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Button fx:id="lgStraightScore" alignment="CENTER" mnemonicParsing="false" prefHeight="20.0" prefWidth="50.0" style="-fx-background-color: transparent;" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="3.0" top="3.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <HBox fx:id="chancePnl" alignment="CENTER_LEFT" layoutX="30.0" layoutY="124.0" maxHeight="50.0" maxWidth="250.0" minWidth="50.0" prefHeight="50.0" prefWidth="200.0" style="-fx-border-color: grey; -fx-border-radius: 10; -fx-border-width: 2;">
+                     <children>
+                        <Label maxHeight="20.0" maxWidth="150.0" minWidth="150.0" text="Chance">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Button fx:id="chanceScore" alignment="CENTER" mnemonicParsing="false" prefHeight="20.0" prefWidth="50.0" style="-fx-background-color: transparent;" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="3.0" top="3.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <HBox fx:id="yahtzeePnl" alignment="CENTER_LEFT" layoutX="30.0" layoutY="100.0" maxHeight="50.0" maxWidth="250.0" minWidth="50.0" prefHeight="50.0" prefWidth="200.0" style="-fx-border-color: grey; -fx-border-radius: 10; -fx-border-width: 2;">
+                     <children>
+                        <Label maxHeight="20.0" maxWidth="150.0" minWidth="150.0" text="YAHTZEE">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Button fx:id="yahtzeeScore" alignment="CENTER" mnemonicParsing="false" prefHeight="20.0" prefWidth="50.0" style="-fx-background-color: transparent;" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="3.0" top="3.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+               </children></VBox>
+         </items>
+      </SplitPane>
+      <HBox prefHeight="30.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="bonusUpper" layoutX="10.0" layoutY="10.0" minWidth="200.0" text="Bonus for left section: 0" />
+            <Label fx:id="yahtzeeBonus" layoutX="10.0" layoutY="10.0" minWidth="200.0" text="Bonus Yahtzee: 0" />
+            <Label fx:id="userMessage" />
+         </children>
+      </HBox>
+      <Label fx:id="score">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin></Label>
+      <Button fx:id="newGameBtn" mnemonicParsing="false" style="-fx-border-radius: 10; -fx-background-color: transparent; -fx-border-color: grey; -fx-border-width: 2;" text="New Game">
+         <VBox.margin>
+            <Insets bottom="5.0" />
+         </VBox.margin></Button>
+   </children>
+</VBox>
